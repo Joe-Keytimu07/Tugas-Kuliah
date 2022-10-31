@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mean</title>
+  </head>
+
+  <body>
+    <script>
+      // membuat variabel angka1 dan 2 untuk menginputkan data angka
+      var totInput = parseInt(prompt("total input : "));
+      var bilangan;
+      var total = 0;
+
+      for (var i = 1; i <= totInput; i++) {
+        bilangan = parseFloat(prompt("masukan angka " + i + " = "));
+        total = total + bilangan;
+      }
+      var mean = total / totInput;
+      alert("nilai mean :" + mean);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator</title>
+    <script>
+      function fTambah() {
+        var bilangan1 = Number(document.getElementById("bilangan1").value);
+        var bilangan2 = Number(document.getElementById("bilangan2").value);
+        var hasil = bilangan1 + bilangan2;
+        document.getElementById("hasil").value = hasil;
+        if (isNaN(hasil)) {
+          document.getElementById("feedback").textContent = "invalid value";
+        }
+      }
+      function fKurang() {
+        var bilangan1 = Number(document.getElementById("bilangan1").value);
+        var bilangan2 = Number(document.getElementById("bilangan2").value);
+        var hasil = bilangan1 - bilangan2;
+        document.getElementById("hasil").value = hasil;
+        if (isNaN(hasil)) {
+          document.getElementById("feedback").textContent = "invalid value";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>kalkulator Tambah/Kurang</h1>
+    <br />
+    <br />
+    <!-- label pada bilangan 1 dan input bilangan -->
+    <label> Bilangan 1 </label>
+    <input
+      type="text"
+      id="bilangan1"
+    />
+    <br />
+    <!-- label pada bilangan 2 dan input bilangan -->
+    <label> Bilangan 2 </label>
+    <input
+      type="text"
+      id="bilangan2"
+    />
+    <div id="feedback"></div>
+
+    <br />
+    <button onclick="fTambah()">+</button>
+    <button onclick="fKurang()">-</button>
+    <br />
+
+    <label> Hasil </label>
+    <input
+      type="text"
+      id="hasil"
+    />
+    <br />
+  </body>
+</html>

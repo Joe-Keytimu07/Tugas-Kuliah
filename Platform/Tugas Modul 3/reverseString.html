@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reverse String</title>
+  </head>
+  <body>
+    <h4>Membalikan Kata</h4>
+    <br />
+    <br />
+    <script>
+      // membuat variabel str untuk memanbahkan inputan String
+      var str = prompt("masukan kalimat : ");
+      // menampilkan data bebrapa tahapa yaitu dengan memecah String menjadi array subString,
+      // kemudian membalikan array element pertama menjadi terakhir
+      // kemudian menggabungkan semua element array menjadi String.
+      var reStr = str.split("").reverse().join("");
+      console.log(reStr);
+    </script>
+    <button onclick="window.location.reload();">refresh and new input</button>
+  </body>
+</html>

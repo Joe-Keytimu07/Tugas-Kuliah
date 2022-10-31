@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <script type="text/javascript">
+      function checkUsername() {
+        var msg = document.getElementById("feedback");
+        var usr = document.getElementById("username");
+        if (usr.value.length < 5) {
+          msg.textContent = "username harus terdiri dari 5 karakter atau lebih";
+        } else {
+          msg.textContent = "";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Website para raja</h1>
+    <h2>New Account</h2>
+    <form action="#">
+      <label for="username"> Create Username </label>
+      <input
+        type="text"
+        id="username"
+        onkeypress="checkUsername();"
+      />
+      <div id="feedback"></div>
+
+      <label for="password"> create password </label>
+      <input
+        type="password"
+        id="password"
+      />
+
+      <input
+        type="submit"
+        value="sign up"
+      />
+    </form>
+  </body>
+</html>

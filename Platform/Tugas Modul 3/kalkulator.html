@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Platform</title>
+  </head>
+  <body>
+    <!-- membuat kop dengan tulisan kalkulator sederhana  -->
+    <h4>Kalkulator sederhana</h4>
+    <!-- Br di gunakan untuk memberi space antara kop dengan label inputan  -->
+    <br />
+    <br />
+    <p>klik kanan, cari <strong>Inspect</strong>, dan pergi ke <strong>Console</strong></p>
+    <script>
+      // membuat variabel baru yang bernama angka1, angka2 dan hasil
+      // di gunakan untuk mengambil sebuah value berupa angka dalam sebuat inputan HTML
+      var angka1 = Number(prompt("angka1 : "));
+      var angka2 = Number(prompt("angka2 : "));
+
+      var tambah = angka1 + angka2;
+      var kurang = angka1 - angka2;
+      var kali = angka1 * angka2;
+      var bagi = angka1 / angka2;
+
+      console.log(`${angka1} and ${angka2}:`);
+      console.log(`+ = ${tambah}`);
+      console.log(`- = ${kurang}`);
+      console.log(`* = ${kali}`);
+      console.log(`/ = ${bagi}`);
+    </script>
+    <button onclick="window.location.reload();">refresh and new input</button>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ganil & genap</title>
+  </head>
+
+  <body>
+    <script>
+      // membuat kumpulan array angkat dengan nama variabel nomor
+      var nomor = Number(prompt("masukan Jumlah keseluruhan"));
+      // membuat array kosong dengan nama variabel genap dan ganjil
+      var genap = 0;
+      var ganjil = 0;
+      // membuat variabel i dengan nilai nol
+      var i = 0;
+      // perulangan dimana i kurang dari banyak data pada variabel nomor dan i ++
+      for (i; i < nomor; i++) {
+        // perbandigan jika banyak data nomor di modulus dengan 2 dan == 0 maka data akan masuk ke dalam variabel genap
+        if (i % 2 == 0) {
+          genap += 1;
+          // jika tidak / ketika data dari nomor ketika di modulus dengan 2 dan hasilnya masih sisa 1, maka data akan masuk kedalam var ganjil
+        } else {
+          ganjil += 1;
+        }
+      }
+      // menampilkan banyak data angka pada array nomor yang masuk kedalam var genap dan ganjil
+      console.log("\ngenap : " + genap);
+      console.log("\nganjil : " + ganjil);
+
+    </script>
+  </body>
+</html>
